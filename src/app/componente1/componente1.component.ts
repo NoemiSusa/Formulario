@@ -14,7 +14,7 @@ export class Componente1Component implements OnInit {
 
   erDNI = '^[0-9]{8}[A-za-z]$';
   mostrarInfo ="";
-  erMens = "";
+  // erMens = "";
   mostrarMens="";
 
   EnviarDatos(nombre,dni,mensaje){

@@ -25,11 +25,12 @@ input[type="button"]:hover{
   background: red;
   cursor: pointer;   /* pone una mano al pasar el boton por encima  */
 }
-#incorrecto{
+#incorrecto,#correcto{
   color: red;
 }
 #mensaje{
   color: red;
+  text-align: right;
 }
 
 

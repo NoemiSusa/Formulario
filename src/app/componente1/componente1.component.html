@@ -1,14 +1,14 @@
 <form action="">
   <label for="Nombre">Nombre</label>
-  <input type="text" #vName id="" placeholder="Escribe tu nombre">
+  <input type="text" #vName id="" placeholder="Escribe tu nombre" />
 
   <label for="dni">DNI</label>
-  <input type="text" #vDNI id="" placeholder="Escribe tu DNI">
+  <input type="text" #vDNI name="" id="" placeholder="Escribe tu DNI" />
 
 
   <div [ngSwitch]="mostrarInfo">
-    <div id="correcto" *ngSwitchCase="'correcto'">Correcto</div>
-    <div id="incorrecto" *ngSwitchCase="'incorrecto'">Inorrecto</div>
+    <div id="correcto" *ngSwitchCase="'Correcto'">Correcto</div>
+    <div id="incorrecto" *ngSwitchCase="'Incorrecto'">Inorrecto</div>
   </div>
 
 
@@ -19,7 +19,7 @@
     <div id="mensaje" *ngSwitchCase="'Este mensaje es demasiado corto'">Este mensaje es demasiado corto</div>
   </div>
 
-  <input type="button" (click)="EnviarDatos(vName, vDNI.value, vMens)"  value="Enviar">
+  <input type="button" (click)="EnviarDatos(vName, vDNI.value, vMens)"  value="Enviar" />
 
 </form>
 
